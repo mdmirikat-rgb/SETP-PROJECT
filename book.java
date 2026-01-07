@@ -7,6 +7,7 @@ public class book {
         this.title = title;
         this.author = author;
         this.isAvailable = true;
+        this.available = true;
     }
 
     public String getTitle() {
@@ -17,9 +18,7 @@ public class book {
         return author;
     }
 
-    public boolean isAvailable() {
-        return isAvailable;
-    }
+  
 
     public boolean borrowBook() {
         if (isAvailable) {
@@ -32,4 +31,13 @@ public class book {
     public void returnBook() {
         isAvailable = true;
     }
+    private boolean available;
+
+public boolean isAvailable() {
+    return available;
+}
+
+public void setAvailable(boolean available) {
+    this.available = available;
+}
 }
