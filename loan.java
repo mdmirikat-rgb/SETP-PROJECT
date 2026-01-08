@@ -7,14 +7,12 @@ public class loan {
     private LocalDate borrowDate;
     private LocalDate returnDate;
     private boolean returned;
-    private String condition;
 
     public loan(book book, member member) {
         this.book = book;
         this.member = member;
         this.borrowDate = LocalDate.now();
         this.returned = false;
-        this.condition = "New";
     }
 
     public boolean borrowBook() {
@@ -28,7 +26,7 @@ public class loan {
     public boolean returnBook() {
         if (!returned) {
             book.setAvailable(true);
-            book.setCondition(conditionAfterReturn);
+
             this.returnDate = LocalDate.now();
             this.returned = true;
             return true;

@@ -18,6 +18,13 @@ public class book {
         return author;
     }
 
+   public void displayStatus() {
+       System.out.println("Title: " + title);
+       System.out.println("author: " + author);
+       System.out.println("isAvailable: " + isAvailable);
+   }
+
+
     public boolean borrowBook() {
         if (isAvailable) {
             isAvailable = false;
@@ -29,21 +36,13 @@ public class book {
     public void returnBook() {
         isAvailable = true;
     }
-
     private boolean available;
 
-    public boolean isAvailable() {
-        return available;
-    }
-
-    public void setAvailable(boolean available) {
-        this.available = available;
-    }
+public boolean isAvailable() {
+    return available;
 }
 
-public void displayInfo() {
-    System.out.println(
-            "Title: " + title +
-                    ", Author: " + author +
-                    ", Status: " + (isAvailable ? "Available" : "Borrowed"));
+public void setAvailable(boolean available) {
+    this.available = available;
+}
 }

@@ -1,31 +1,22 @@
+import java.util.Scanner;
+
 public class main {
     public static void main(String[] args) {
+         Scanner scanner=new Scanner(System.in);
+        System.out.println("Please enter book title");
+        String Title=scanner.nextLine();
+        System.out.println("Please enter book author");
+        String Author=scanner.nextLine();
+        System.out.println("Please enter member name");
+        String MemberName=scanner.nextLine();
+        System.out.println("Please enter member Id");
+        String MemberId=scanner.nextLine();
 
-        // Create a book
-        book book1 = new book("ISBN001", "Java Programming");
+        book book1 = new book(Title,Author);
+        member member1 = new member(MemberId, MemberName);
+        book1.displayStatus();
+        member1.displayMember();
 
-        // Create a member
-        member member1 = new member("M001", "Sisay");
 
-        // Create a loan
-        loan loan1 = new loan(book1, member1);
-
-        // Issue the book
-        loan1.issueBook();
-
-        // Try issuing again (should fail)
-        loan1.issueBook();
-
-        // Return the book
-        loan1.returnBook();
-
-        // Issue again (should work)
-        loan1.issueBook();
-        if (loan1.returnBook("Good"))
-        { System.out.println("Book returned successfully."); 
-         System.out.println("Updated condition: " + book1.getCondition()); }
-
-        // Display book details
-        System.out.println(book1);
     }
 }
