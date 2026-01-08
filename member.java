@@ -1,34 +1,17 @@
-import java.util.Date;
+public class member {
+    private String memberId;
+    private String name;
 
-public class Loan {
-    private static int counter = 1;
-    private int loanId;
-    private Date loanDate;
-    private Date returnDate;
-    private boolean active;
-    private Member member;
-    private Book book;
-    private String loanType; // new variable
-
-    public Loan(Member member, Book book, String loanType) {
-        this.loanId = counter++;
-        this.loanDate = new Date();
-        this.active = true;
-        this.member = member;
-        this.book = book;
-        this.loanType = loanType;
+    public member(String memberId, String name) {
+        this.memberId = memberId;
+        this.name = name;
     }
 
-    public int getLoanId() { return loanId; }
-    public Date getLoanDate() { return loanDate; }
-    public Date getReturnDate() { return returnDate; }
-    public boolean isActive() { return active; }
-    public Member getMember() { return member; }
-    public Book getBook() { return book; }
-    public String getLoanType() { return loanType; }
+    public String getMemberId() {
+        return memberId;
+    }
 
-    public void closeLoan() {
-        this.returnDate = new Date();
-        this.active = false;
+    public String getName() {
+        return name;
     }
 }
