@@ -32,7 +32,7 @@ public class Main {
         // Display extra details
         System.out.println("Book Price: " + bookPrice);
         System.out.println("Book Page Number: " + bookPageNumber);
-
+         book1.printData();
         scanner.close();
     }
 }
