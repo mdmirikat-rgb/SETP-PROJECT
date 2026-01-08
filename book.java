@@ -1,3 +1,4 @@
+import java.util Scanner;
 public class book {
     private String title;
     private String author;
@@ -23,7 +24,10 @@ public class book {
        System.out.println("author: " + author);
        System.out.println("isAvailable: " + isAvailable);
    }
-
+    Scanner.scanner=new Scanner(System.in);
+public void printData(){
+    System.out.println("BookPage:"+ bookpage);
+    System.out.println("bookPrice:"+bookprice);
 
     public boolean borrowBook() {
         if (isAvailable) {
