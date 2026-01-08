@@ -21,6 +21,9 @@ public class main {
 
         // Issue again (should work)
         loan1.issueBook();
+        if (loan1.returnBook("Good"))
+        { System.out.println("Book returned successfully."); 
+         System.out.println("Updated condition: " + book1.getCondition()); }
 
         // Display book details
         System.out.println(book1);
