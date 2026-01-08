@@ -2,11 +2,11 @@
  # SETP-PROJECT
 # Library Management System – SETP Assignment
  Name................................id
- 1.sisay melese...................1600669
- 2.mebrahtu seife.................1600499
- 3.megersa bekele...................1613
- 4.mirkat dawit......................1600550
- 5.solomon geta.......................1600673
+ 1.Sisay melese...................1600669
+ 2.Mebrahtu seife.................1600499
+ 3.Megersa bekele...................1613
+ 4.Mirkat dawit......................1600550
+ 5.Solomon geta.......................1600673
  6.Abel alemu.........................1600040
 
 This project is a Library Management System developed as part of the
